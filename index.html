@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Skateboarding Survey</title>
+</head>
+<body>
+  <h1 id="title">Skatepark Survey</h1>
+  <h4>for Greater Philadelphia Area</h4>
+  <div class="container">
+    <div class="header">
+      <h4>This survey is to gain insight on the public view on skateparks.</h4>
+      <p id="description">With a lack of outdoor activities in Philadelphia, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi maxime odit sapiente ipsa. Nemo, sint tenetur et odio eaque accusantium. Philadelphia metropolitan area, which is the 6th largest metropolitan area in the United States, has more than 6 million residents. With an area 141.7 mi²  and a population of 1.581 million in 2017, Philadelphia is the 23rd most populous county in the United States, with roughly 11157 people per square mile.</p><br>
+      <p>With the rise of skateboarding being in the upcoming 2020 Olympic Games, skateparks have been higher in demand in major cities. With a lack of Local and State Government interest and funding, many major cities like Philadelphia fall behind on the construction of new skateparks. With no help, local skaters have resorted to..</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed itaque similique maxime officiis provident ut accusantium facere repudiandae, expedita tenetur odit quisquam eius corrupti quas ipsa rem, harum vitae? Id, voluptas doloribus praesentium cumque dolorem dolorum quasi quo vitae modi? Nostrum, ullam labore? Quaerat optio incidunt cum, facere fugit ab!</p>
+    </div>
+    <!-- FORM BASIC INFO -->
+    <div id="form-info">
+      <form id="survey-form" method="GET" action="https://crossorigin.me/https://freecodecamp.com">
+        <!-- INFO NAME FORM -->
+        <div id="info">
+          <div class="form-tabs"> 
+            <div class="labels">
+              <label id="name-label" for="name">NAME</label>
+            </div>
+            <input id="name" class="info-in" type="text" autofocus placeholder="Enter your name" required>
+          </div> 
+          <hr>
+          <!-- EMAIL FORM -->
+          <div class="form-tabs">
+            <div class="labels">
+              <label id="email-label" for="email">EMAIL</label>
+            </div>
+            <input id="email" class="info-in" type="email" placeholder="Enter your email" required>
+          </div>
+          <hr>
+          <!-- AGE FORM -->
+          <div class="form-tabs">
+            <div class="labels">
+              <label id="number-label" for="number">AGE</label>
+            </div>
+            <input id="number" class="info-in" type="number" placeholder="Enter your age" min="1" max="120">
+          </div>
+          <hr>
+          <!-- AREA FORM -->
+          <div class="form-tabs">
+            <div class="labels">
+              <label id="area-label" for="area">AREA</label>
+            </div>
+            <input id="area" class="info-in" type="text" placeholder="What area do you live?" required/>
+          </div>
+          <hr>
+        </div>
+        <!-- OPINION FORM -->
+        <div id="opinion">
+          <div class="form-tabs" id="drop">
+            <label for="dropdown">What is your stance on public skateparks?</label>
+            <select id="dropdown" name="stance" class="drop">
+              <option disabled selected value>Select option</option>
+              <option value="for">For</option>
+              <option value="against">Against</option>
+              <option value="participant">I use them</option>
+              <option value="children">My children use them</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <hr>
+          <!-- RADIO OPINION -->
+          <div id="form-tabs">
+            <div class="centered">
+              <h3>How likely are you to visit/use a public skatepark?</h3>
+              <input type="radio" id="highly" value="highly" name="likely" checked>
+              <label class="radio-box" for="highly">Highly likely</label>
+              <input type="radio" id="likely" value="likely" name="likely">
+              <label class="radio-box" for="likely">Likely</label>
+              <input type="radio" id="lessThan" value="lessThan" name="likely">
+              <label class="radio-box" for="lessThan">Less than likely</label>
+              <input type="radio" id="never" value="never" name="likely">        
+              <label class="radio-box" for="never">Never</label>
+            </div>
+          </div>
+          <hr>
+          <!-- CHECKBOX PREF -->
+          <div class="lower-form">
+              <h4>What is the most important thing to you in your community?</h4>
+              <p>(Please check up to 3 that apply):</p>
+            <div id="check-box">
+              <div class="right-tab">
+                <ul id="community">
+                  <li class="checkbox">
+                    <label><input name="choice" value="1" type="checkbox">Safety</label>
+                  </li>
+                  <li class="checkbox">
+                    <label><input name="choice" value="2" type="checkbox">Shopping</label>
+                  </li>
+                  <li class="checkbox">
+                    <label><input name="choice" value="3" type="checkbox">Public Transport</label>
+                  </li>
+                  <li class="checkbox">
+                    <label><input name="choice" value="4" type="checkbox">Nightlife</label>
+                  </li>
+                  <li class="checkbox">
+                    <label><input name="choice" value="5" type="checkbox">Parking</label>
+                  </li>
+                  <li class="checkbox">
+                    <label><input name="choice" value="6" type="checkbox">Space</label>
+                  </li>
+                  <li class="checkbox">
+                    <label><input name="choice" value="7" type="checkbox">Emergency Services</label>
+                  </li>
+                  <li class="checkbox">
+                    <label><input name="choice" value="8" type="checkbox">Schools</label>
+                  </li>
+                  <li class="checkbox">
+                      <label><input name="choice" value="9" type="checkbox">Proximity to place of work</label>
+                  </li>
+                </ul>
+
+              </div>
+            </div>
+          </div>
+          <hr>
+            <!-- TEXT AREA -->
+          <h4>What are your honest opinions on skateparks?</h4>
+          <div id="final">
+              <textarea id="comments" class="comment-box" name="comments" placeholder="Please enter comments here."></textarea>
+              <hr>
+              <!-- SUBMIT BUTTON -->
+              <button type="submit" id="submit" class="btn">Send survey</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <footer>
+      <p>Phil Billingsby 2019</p>
+    </footer>
+  </div>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

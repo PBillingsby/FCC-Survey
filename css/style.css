@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto+Condensed');
+ * {
+	padding: 0;
+	margin: 0;
+}
+body {
+	min-width: 360px;
+	background-image: linear-gradient(to left, #eee, #eee, #D1D3DD);
+	font-family: "Roboto Condensed";
+}
+.container {
+	max-width: 1000px;
+	height: auto;
+	background: #eee;
+	margin: auto;
+  margin-bottom: 1rem;
+	padding-top: 10px;
+	border: 1px solid rgba(169, 169, 170, 1);
+}
+#survey-form {
+	margin: 0 auto;
+	padding: 10px;
+}
+h1,
+h2,
+h4,
+p {
+	text-align: center;
+}
+h1 {
+	padding: 20px 0 10px 0;
+	font-size: 2.5rem;
+}
+h2 {
+	font-weight: 100;
+	color: black;
+}
+h3 {
+	margin: .3rem 0 .3rem 0;
+}
+h4 {
+	padding: .5rem 0;
+}
+p {
+	font-size: 12px;
+	font-weight: lighter;
+	font-family: "Montserrat";
+}
+.header {
+	max-width: 90%;
+	height: auto;
+	border: 1px solid rgba(169, 169, 170, 0.3);
+	margin: .5rem auto;
+	text-align: center;
+}
+#title {
+	color: #3D9970;
+	font-size: 6rem;
+}
+/* FORM BASIC */
+
+#info {
+	max-width: 75%;
+	height: auto;
+	background-color: #eee;
+	margin: 1rem auto;
+}
+#form-info {} #name-label {} .form-tabs {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	grid-gap: 1rem;
+	grid-template-rows: auto;
+	margin: .5rem auto;
+}
+.labels {
+	text-align: center;
+}
+.info-in {} #check-box {
+	width: 50%;
+	height: auto;
+	margin: 0 auto;
+	text-align: center;
+}
+.checkbox {
+	display: block;
+	margin: 2px auto;
+}
+.right-tab {
+	display: inline;
+}
+/* DROPDOWN */
+
+#opinion {} #drop {
+	max-width: 75%;
+	background-color: #eee;
+}
+.centered {
+	text-align: center;
+	padding-bottom: .5rem;
+}
+.radio-box {
+	padding: .5rem;
+}
+#community {
+	list-style: none;
+}
+.checkbox {
+	position: relative;
+	margin-left: 10px;
+	display: inline-block;
+	padding-bottom: 10px;
+}
+input[type="checkbox"] {
+	float: left;
+	margin-right: 5px;
+}
+.lower-form {
+	height: auto;
+	background-color: #eee;
+	padding: 1rem;
+}
+/* TEXT-AREA */
+
+#comments {
+	margin: 0 auto;
+	height: 7.5rem;
+	width: 20rem;
+}
+:placeholder-shown {
+	padding-left: 5px;
+}
+#final {
+	padding: 10px 0;
+	text-align: center;
+}
+.btn {
+	padding: 10px;
+	border-radius: 5px;
+	box-shadow: rgba(169, 169, 170, 0.3) 1.5px 1px;
+}
+#submit {
+	margin-top: .5rem;
+	margin-bottom: ;
+}
+footer {
+  width: 100%;
+  background-color: #D1D3DD;
+  padding: .75rem 0;
+  border-top: 1px solid rgba(169, 169, 170, 1);
+}
+@media only screen and (max-width: 480px) {
+	#title {
+		font-size: 3rem;
+	}
+}
